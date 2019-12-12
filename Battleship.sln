@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Services", "Battleship\Battleship.Services.csproj", "{836DCD46-CD0C-4E22-92AC-85E0995E1318}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Services", "Battleship.Services\Battleship.Services.csproj", "{836DCD46-CD0C-4E22-92AC-85E0995E1318}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleship.Tests", "Battleship.Tests\Battleship.Tests.csproj", "{076F8B61-86D5-4BD6-9483-F33CE42BFBD3}"
 EndProject
