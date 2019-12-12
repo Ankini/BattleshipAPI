@@ -1,0 +1,125 @@
+{
+	"id": "3ce9c1af-4e8a-529d-f3dc-ca941336ba63",
+	"name": "Battleship",
+	"description": "API Test - Battleship ",
+	"order": [
+		"aa7d5d35-0990-3608-24ef-6ef3197f4c5c",
+		"6f70b09e-1489-16e7-08d8-ace1992731ca",
+		"6f6d15e8-bd5d-d4e1-7582-f41cd86e294a"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1576045702972,
+	"owner": "9757006",
+	"public": false,
+	"requests": [
+		{
+			"id": "6f6d15e8-bd5d-d4e1-7582-f41cd86e294a",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{HostEnv}}/actions/reset-game",
+			"queryParams": [],
+			"preRequestScript": "postman.setGlobalVariable(\"host\", \"http://localhost:49324\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576113499280,
+			"name": "Reset Game",
+			"description": "Test API to position Ship",
+			"collectionId": "3ce9c1af-4e8a-529d-f3dc-ca941336ba63",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "6f70b09e-1489-16e7-08d8-ace1992731ca",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{HostEnv}}/actions/attack",
+			"queryParams": [],
+			"preRequestScript": "postman.setGlobalVariable(\"HostEnv\", \"https://ofxbattleshipapis.azurewebsites.net/api2/v1/battleship\");",
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576113568153,
+			"name": "Attack a point",
+			"description": "Test API to position Ship",
+			"collectionId": "3ce9c1af-4e8a-529d-f3dc-ca941336ba63",
+			"responses": [],
+			"rawModeData": "{\nxCoordinate:3,\nyCoordinate:3\n}"
+		},
+		{
+			"id": "aa7d5d35-0990-3608-24ef-6ef3197f4c5c",
+			"headers": "Content-Type: application/json\nAccept: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "{{HostEnv}}/actions/place-ship",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1576118982349,
+			"name": "Position Ship",
+			"description": "Test API to position Ship",
+			"collectionId": "3ce9c1af-4e8a-529d-f3dc-ca941336ba63",
+			"responses": [],
+			"rawModeData": "{\nship:'Submarine',\nstartPoint:{xCoordinate:3,\nyCoordinate:1},\norientation:'north'\n}"
+		}
+	]
+}
