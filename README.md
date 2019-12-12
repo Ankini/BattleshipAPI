@@ -39,25 +39,28 @@ Extension method demo via Enum description
 xUnit Unit test cases to verify the BL manager functionalities
 
 
+# Solution briefing
 
+1. Battleship.Services 
+  
+  StateTrackerController
+  API Exception handling 
+  GlobalExceptionHandler - this is exception handler to capture all the unhandle excceptions within the web api pipeline
+  GlobalExceptionLogger - Logging all the unhandled exception for health monitoring and trouble shooting
+  
+  API Configs
+  
+  MapperConfig -Battleship - Automapper – Register
+  UnityConfig - Battleship - Dependacy Registry
+  WebApiConfig - Battleship  - Web Api config
+ 
+ 2. Battleship.BL 
+ 
+  StateTrackingManager – state tracking business logic
+  ShipOrientationFactory – Facotry to resolve ShipOrientation for calculating points occupied on board basesd on orientation
+  BattleShipFactory – Factory to resolve Ship type base on ShipType enum
 
+3. Battleship.Tests
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  StateTrackingManagerTests – unit test for stateTrackingManager
+  ConfigureAutoMapperAttribute – automapper config for unit tests
