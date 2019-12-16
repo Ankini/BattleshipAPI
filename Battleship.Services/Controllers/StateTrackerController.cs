@@ -14,9 +14,9 @@ namespace Battleship.Services.Controllers
     /// 2. user just need to start the game by placing the ship using - actions/place-ship
     /// 3. once required ships are placed on the board, user can start lodging attacks using - actions/attack
     /// 4. At point of time user can reset the game using - actions/reset-game
-    /// APIs hosted at - https://ofxbattleshipapis.azurewebsites.net/api2/v1/battleship/
+    /// APIs hosted at - https://ofxbattleshipapis.azurewebsites.net/api2/battleship/
     /// </summary>
-    [RoutePrefix(GameConstant.ApiRoutePrefix + "v1/battleship")]
+    [RoutePrefix(GameConstant.ApiRoutePrefix + "battleship")]
     public class StateTrackerController : ApiController
     {
         private readonly IStateTrackingManager _stateTrackingManager;

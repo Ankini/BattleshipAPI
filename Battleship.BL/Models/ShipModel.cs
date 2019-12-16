@@ -23,7 +23,7 @@ namespace Battleship.BL.Models
 
         /// <summary>
         /// Ship Orientation
-        /// Posible values - North/ South/ East/ West
+        /// Possible values - North/ South/ East/ West
         /// </summary>
         [Required]
         public ShipOrientation Orientation { get; set; }
